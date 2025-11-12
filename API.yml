@@ -1,0 +1,312 @@
+openapi: 3.0.3
+info:
+  title: Sample API
+  description: A sample API to demonstrate OpenAPI specification.
+  version: 1.0.0
+servers:
+  - url: http://localhost:7071/
+    description: Development server
+  - url: https://api.example.com/v1
+    description: Production server
+tags:
+  - name: Users
+    description: Operations related to user management
+  - name: Department
+    description: Department related to department
+  - name: Permission
+    description: Permission related to user permission
+paths:
+  /users:
+    get:
+      summary: Get all users
+      tags:
+        - Users
+      responses:
+        '200':
+          description: A list of users
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/UserResponse'
+    post:
+      summary: Create a new user
+      tags:
+        - Users
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserRequest'
+      responses:
+        '201':
+          description: User created successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserResponse'
+        '400':
+          description: Invalid input'
+
+  /users/{userId}:
+    get:
+      summary: Get a user by ID
+      tags:
+        - Users
+      parameters:
+        - in: path
+          name: userId
+          schema:
+            type: string
+          required: true 
+          description: ID of the user to retrieve
+     
+      responses:
+        '200':
+          description: User details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserRequest'
+        '404':
+          description: User not found
+    
+    put:
+      summary: Update User by ID
+      tags:
+        - Users
+      parameters:
+        - in: path
+          name: userId
+          schema:
+            type: string
+          required: true 
+          description: ID of the user to retrieve
+
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserRequest'
+
+      responses:
+        '200':
+          description: User details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserRequest'
+        '404':
+          description: User not found'
+
+
+# Department related APIs
+
+  /department:
+    get:
+      summary: Get all department
+      tags:
+        - Department
+      responses:
+        '200':
+          description: A list of department
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/DepartmentResponse'
+    post:
+      summary: Create a new department
+      tags:
+        - Department
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DepartmentRequest'
+      responses:
+        '201':
+          description: Department created successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DepartmentResponse'
+        '400':
+          description: Invalid input'
+
+
+
+  /permission:
+    get:
+      summary: Get all Permission
+      tags:
+        - Permission
+      responses:
+        '200':
+          description: A list of Permission
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/PermissionResponse'
+    post:
+      summary: Create a new permission
+      tags:
+        - Permission
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DepartmentRequest'
+      responses:
+        '201':
+          description: Department created successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DepartmentResponse'
+        '400':
+          description: Invalid input'
+
+
+  /permission/{userId}:
+    post:
+      summary: add  permission
+      tags:
+        - Permission
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                $ref: '#/components/schemas/DepartmentRequest'
+      responses:
+        '201':
+          description: Permission added successfully
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                 $ref: '#/components/schemas/PermissionResponse'
+        '400':
+          description: Invalid input'
+    put:
+      summary: Update permission
+      tags:
+        - Permission
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                $ref: '#/components/schemas/PermissionRequest'
+      responses:
+        '201':
+          description: Permission updated successfully
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                 $ref: '#/components/schemas/PermissionResponse'
+        '400':
+          description: Invalid input'
+
+     
+
+components:
+
+  schemas:
+    UserRequest:
+      type: object
+      properties:
+        
+        name:
+          type: string
+          example: John Doe
+        department:
+          type: integer
+          format: integer
+          example: 1
+
+    UserResponse:
+      type: object
+      required:
+        - id
+        - name
+        - department
+      properties:
+
+        id:
+          type: integer
+          example: 1
+        name:
+          type: string
+          example: Jane Smith
+        department:
+          type: integer
+          format: integer
+          example: 1
+
+    DepartmentRequest:
+      type: object
+      required:
+        - name
+        
+      properties:
+        name:
+          type: string
+          example: Jane Smith
+
+    DepartmentResponse:
+      type: object
+      required:
+        - id
+        - name
+        
+      properties:
+
+        departmentId:
+          type: integer
+          example: 1
+        departmentName:
+          type: string
+          example: Jane Smith
+
+    PermissionRequest:
+      type: object
+      required:
+        - name
+      properties:
+        name:
+          type: string
+          example: read
+    PermissionResponse:
+      type: object
+      required:
+        - id
+        - name
+        
+      properties:
+
+        permissionId:
+          type: integer
+          example: 1
+        permissionName:
+          type: string
+          example: read
+
+         
+        
