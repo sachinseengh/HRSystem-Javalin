@@ -1,24 +1,24 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.employee_management.user;
 
+import com.mycompany.employee_management.EmailService.EmailService;
 import com.mycompany.employee_management.department.Department;
 import com.mycompany.employee_management.department.DepartmentRepository;
 import com.mycompany.employee_management.department.DepartmentRepositoryImplementation;
 import com.mycompany.employee_management.department.DepartmentResponse;
 import com.mycompany.employee_management.exception.DuplicateFoundException;
 import com.mycompany.employee_management.exception.InvalidCredentialsException;
+import com.mycompany.employee_management.exception.OperationFailedException;
 import com.mycompany.employee_management.exception.ResourceNotFoundException;
 import com.mycompany.employee_management.permission.Permission;
-import com.mycompany.employee_management.permission.PermissionRepository;
-import com.mycompany.employee_management.permission.PermissionRepositoryImplementation;
+ 
 import com.mycompany.employee_management.permission.PermissionResponse;
 import com.mycompany.employee_management.security.JwtUtil;
+import com.mycompany.employee_management.user.forgetPassword.ForgetPasswordRequest;
+import com.mycompany.employee_management.user.forgetPassword.SendForgetPasswordEmail;
 import com.mycompany.employee_management.user.loginPojo.LoginRequest;
 import com.mycompany.employee_management.user.loginPojo.LoginResponse;
 import com.mycompany.employee_management.user.logout.LogoutResponse;
+import com.mycompany.employee_management.user.passwordChange.ChangePasswordRequest;
   
 import java.util.ArrayList;
 import java.util.List;
@@ -34,9 +34,11 @@ import org.mindrot.jbcrypt.BCrypt;
 public class UserServiceImplementation implements UserService {
 
     private final UserRepository userRepository = (UserRepository) new UserRepositoryImplementation();
-    private final PermissionRepository permissionRepository = (PermissionRepository) new PermissionRepositoryImplementation();
+     
     
     private final DepartmentRepository departmentRepository = (DepartmentRepository) new DepartmentRepositoryImplementation();
+    
+     
     
 
     @Override
@@ -183,5 +185,70 @@ public class UserServiceImplementation implements UserService {
         return new LogoutResponse("Logout Success!");
 
     }
+    
+    
+    @Override
+    public String sendForgetPasswordEmail(SendForgetPasswordEmail request) {
+        
+        User user  = userRepository.findByEmail(request.getEmail()).orElseThrow(()->new ResourceNotFoundException("User not Found"));
+         
+        String emailSignedToken=JwtUtil.generateVerificationToken(request.getEmail());
+        
+        if(emailSignedToken == null){
+            throw new OperationFailedException("Token generation Failed", 500);
+        }
+        
+        String emailResponse = EmailService.sendEmail(request.getEmail(), emailSignedToken);
+        
+        return emailResponse;
+        
+    }
+
+    @Override
+    public UserResponse changePassword(ChangePasswordRequest request){
+        
+        User user = userRepository.findByEmail(request.getEmail()).orElseThrow(()->new ResourceNotFoundException("User not found"));
+        
+     
+        if(!(BCrypt.checkpw(request.getCurrentPassword(), user.getPassword()))){
+            throw new OperationFailedException("Incorrect Current Password!",400);
+            
+        }
+         
+        String hashedPw = BCrypt.hashpw(request.getNewPassword(),BCrypt.gensalt(10));
+  
+        String passwordResponse = userRepository.changePassword(request.getEmail(), hashedPw);
+        
+        return new UserResponse(
+                user.getId(),
+                user.getName(), 
+                user.getEmail(),
+                new DepartmentResponse(user.getDepartment().getId(), user.getDepartment().getName()),
+                userRepository.getUserPermission(user.getId()));     
+    }
+
+    @Override
+    public UserResponse resetPassword(ForgetPasswordRequest request) {
+      
+        String token = request.getEmailSignedToken();
+       
+        String extractedEmail = JwtUtil.extractEmailFromToken(token);
+        
+        User user = userRepository.findByEmail(extractedEmail).orElseThrow(()->new ResourceNotFoundException("User not Found!"));
+ 
+        String hashedPassword = BCrypt.hashpw(request.getPassword(),BCrypt.gensalt(10));
+  
+        String passwordResponse = userRepository.changePassword(extractedEmail, hashedPassword);
+        
+        return new UserResponse(
+                user.getId(),
+                user.getName(),
+                user.getEmail(),
+                new DepartmentResponse(user.getDepartment().getId(), user.getDepartment().getName()),
+                userRepository.getUserPermission(user.getId()));  
+ 
+    }
+
+  
 
 }

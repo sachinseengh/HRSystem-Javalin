@@ -4,11 +4,14 @@
  */
 package com.mycompany.employee_management.user;
 
+import com.mycompany.employee_management.user.forgetPassword.SendForgetPasswordEmail;
 import com.mycompany.employee_management.department.DepartmentResponse;
 import com.mycompany.employee_management.permission.PermissionResponse;
+import com.mycompany.employee_management.user.forgetPassword.ForgetPasswordRequest;
 import com.mycompany.employee_management.user.loginPojo.LoginRequest;
 import com.mycompany.employee_management.user.loginPojo.LoginResponse;
 import com.mycompany.employee_management.user.logout.LogoutResponse;
+import com.mycompany.employee_management.user.passwordChange.ChangePasswordRequest;
 import java.util.List;
 import java.util.Map;
 
@@ -33,10 +36,13 @@ public interface UserService {
      
     Map<String,Integer> getDashboardDetails();
     
-    
     LogoutResponse logout();
     
+    UserResponse changePassword(ChangePasswordRequest request);
     
-    
+    UserResponse resetPassword(ForgetPasswordRequest request);
 
+    
+    String sendForgetPasswordEmail(SendForgetPasswordEmail request);
+            
 }

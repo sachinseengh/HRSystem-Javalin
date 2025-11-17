@@ -49,7 +49,7 @@ public class JwtUtil {
                 .compact();
         
     }
-    
+  
     
     public static Claims validateToken(String token){
         
@@ -59,6 +59,26 @@ public class JwtUtil {
                 .parseClaimsJws(token)
                 .getBody();
     }
+    
+    
+     public static String generateVerificationToken(String subject){
+        
+        return Jwts.builder()
+                .setSubject(subject)
+                .setIssuedAt(new Date())
+                .setExpiration(new Date(System.currentTimeMillis()+ACCESS_TOKEN_EXPIRATION))
+                .signWith(key)
+                .compact();
+    }
+     
+     public static String extractEmailFromToken(String token){
+         
+          return Jwts.parserBuilder()
+                .setSigningKey(key)
+                .build()
+                .parseClaimsJws(token)
+                .getBody().getSubject();
+     }
             
     
 }

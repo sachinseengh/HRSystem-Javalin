@@ -42,10 +42,11 @@ public interface UserRepository {
 
  
     List<PermissionResponse> getUserPermission(int userId);
+ 
+    Map<String,Integer> getDashboardData();
     
     
-    
-      Map<String,Integer> getDashboardData();
+    String changePassword(String email,String password);
     
     
 }

@@ -510,8 +510,6 @@ public Optional<User> findByEmail(String email) {
     }
 }
 
-
-
     @Override
     public Map<String, Integer> getDashboardData() {
         String sql = "SELECT\n"
@@ -539,5 +537,33 @@ public Optional<User> findByEmail(String email) {
 
         }
 
+    }
+
+    @Override
+    public String changePassword(String email,String password) {
+
+        String sql ="update users set password = ? where email=?";
+        
+        try(Connection conn = DataBaseSourceClass.getDataSource().getConnection();
+                PreparedStatement stmt = conn.prepareStatement(sql);){
+            
+            
+            stmt.setString(1, password);
+            stmt.setString(2,email);
+
+
+             int affectedRow = stmt.executeUpdate();
+             if(affectedRow<0){
+                 throw new OperationFailedException("Update Query Failed !",500);
+             }
+             
+             return password;
+            
+            
+            
+        }catch(Exception e){
+            throw new OperationFailedException(e.getMessage(),500);
+        }
+        
     }
 }

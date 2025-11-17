@@ -28,7 +28,8 @@ public class DepartmentRepositoryImplementation implements DepartmentRepository 
 
         String sql = "insert into department(name) values (?)";
 
-        try (Connection conn = DataBaseSourceClass.getDataSource().getConnection(); PreparedStatement statement = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);) {
+        try (Connection conn = DataBaseSourceClass.getDataSource().getConnection(); 
+                PreparedStatement statement = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
 
             statement.setString(1, departmentRequest.getName());
 

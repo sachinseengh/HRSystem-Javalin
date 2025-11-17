@@ -64,7 +64,7 @@ public class AppExceptionHandler {
             ctx.json(getErrors(e.getMessage())).status(e.getStatusCode());
         });
            
-           
+   
            
            app.exception(SignatureException.class, (e, ctx) -> {
             ctx.status(401).json(getAuthErrorResponse());

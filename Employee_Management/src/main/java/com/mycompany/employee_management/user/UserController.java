@@ -8,7 +8,11 @@ import com.mycompany.employee_management.MiddleWare.AuthMiddleWare;
 import com.mycompany.employee_management.exception.UnauthorizedException;
  
 import com.mycompany.employee_management.security.JwtUtil;
+import com.mycompany.employee_management.user.forgetPassword.ForgetPasswordRequest;
+import com.mycompany.employee_management.user.forgetPassword.SendForgetPasswordEmail;
+ 
 import com.mycompany.employee_management.user.loginPojo.LoginRequest;
+import com.mycompany.employee_management.user.passwordChange.ChangePasswordRequest;
  
 import io.javalin.Javalin;
  
@@ -25,7 +29,8 @@ public class UserController {
     private final UserService userService = (UserService) new UserServiceImplementation();
     
     
-    public UserController(Javalin app){
+    public UserController(Javalin app)
+    {
          
         
 //        app.before("/user",AuthMiddleWare.requireLogin);
@@ -129,6 +134,28 @@ public class UserController {
  
         app.get("/dashboard", ctx->{
             ctx.json(userService.getDashboardDetails()).status(200);
+        });
+        
+        
+        app.post("/forget-password",ctx->{
+            
+            SendForgetPasswordEmail request = ctx.bodyAsClass(SendForgetPasswordEmail.class);
+            
+            ctx.json(userService.sendForgetPasswordEmail(request)).status(200);
+        });
+        
+        
+        app.post("/reset-password",ctx-> {
+            ForgetPasswordRequest  request = ctx.bodyAsClass(ForgetPasswordRequest.class);
+            ctx.json(userService.resetPassword(request)).status(200);
+        });
+        
+        app.post("/user/changePassword",ctx -> {
+            
+            ChangePasswordRequest request = ctx.bodyAsClass(ChangePasswordRequest.class);
+            
+            ctx.json(userService.changePassword(request)).status(200);
+ 
         });
     }
     

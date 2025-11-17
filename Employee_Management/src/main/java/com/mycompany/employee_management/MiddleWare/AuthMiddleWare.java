@@ -66,9 +66,7 @@ public class AuthMiddleWare {
         return ctx -> {
             
             requireLogin.handle(ctx);
-            
-            
-            
+ 
             Integer userId = ctx.attribute("userId");
             if (userId == null) {
                 throw new UnauthorizedException("UnAuthorized! Please Log in First!", 401);
@@ -76,8 +74,7 @@ public class AuthMiddleWare {
  
             List<String> permissions = ctx.attribute("permissions");
             
-            
-            
+             
             boolean hasPermission = permissions.stream()
                     .anyMatch(p -> p.equalsIgnoreCase(permissionName));
 
