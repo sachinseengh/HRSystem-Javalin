@@ -6,6 +6,7 @@ package com.mycompany.employee_management.permission;
 
  
 import com.mycompany.employee_management.config.DataBaseSourceClass;
+import com.mycompany.employee_management.exception.DuplicateFoundException;
 import com.mycompany.employee_management.exception.OperationFailedException;
  
 import java.sql.Connection;
@@ -25,12 +26,20 @@ public class PermissionRepositoryImplementation implements PermissionRepository 
 
     @Override
     public PermissionResponse createPermission(PermissionRequest permissionRequest) {
+        
+        Optional<Permission> permission = findById(permissionRequest.getId());
+        
+        if(permission .isPresent()){
+            throw new DuplicateFoundException("Permission Id already Exists !");
+        }
 
-        String sql = "insert into permission(name) values (?)";
+        String sql = "insert into permission(id,name,section,department) values (?,?,?,?)";
 
         try (Connection conn = DataBaseSourceClass.getDataSource().getConnection(); PreparedStatement statement = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);) {
 
             statement.setString(1, permissionRequest.getName());
+            statement.setString(2, permissionRequest.getSection());
+            statement.setString(3, permissionRequest.getDescription());
 
             int affectedRow = statement.executeUpdate();
 
@@ -39,7 +48,7 @@ public class PermissionRepositoryImplementation implements PermissionRepository 
                 ResultSet resultSet = statement.getGeneratedKeys();
 
                 while (resultSet.next()) {
-                    return new PermissionResponse(resultSet.getInt(1), permissionRequest.getName());
+                    return new PermissionResponse(resultSet.getInt(1), permissionRequest.getName(),permissionRequest.getSection(),permissionRequest.getDescription());
                 }
             }
         } catch (Exception e) {
@@ -62,7 +71,7 @@ public class PermissionRepositoryImplementation implements PermissionRepository 
             ResultSet resultSet = prepareStatement.executeQuery();
 
             while (resultSet.next()) {
-                responses.add(new PermissionResponse(resultSet.getInt(1), resultSet.getString("name")));
+                responses.add(new PermissionResponse(resultSet.getInt(1), resultSet.getString("name"),resultSet.getString("section"),resultSet.getString("description")));
             }
             return responses;
 
@@ -87,7 +96,7 @@ public class PermissionRepositoryImplementation implements PermissionRepository 
 
             while (rs.next()) {
 
-                return Optional.of(new Permission(rs.getInt("id"), rs.getString("name")));
+                return Optional.of(new Permission(rs.getInt("id"), rs.getString("name"),rs.getString("section"),rs.getString("description")));
             }
 
         } catch (Exception e) {

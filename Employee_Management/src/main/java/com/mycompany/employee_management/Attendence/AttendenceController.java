@@ -5,6 +5,7 @@
 package com.mycompany.employee_management.Attendence;
  
 import com.mycompany.employee_management.MiddleWare.AuthMiddleWare;
+import com.mycompany.employee_management.PermissionConstant.PermissionConstant;
 import com.mycompany.employee_management.exception.ResourceNotFoundException;
 import com.mycompany.employee_management.exception.UnauthorizedException;
 import io.javalin.Javalin;
@@ -23,14 +24,13 @@ public class AttendenceController {
         
         
         app.before("/attendence/*",AuthMiddleWare.requireLogin);
-        
-        
-        
+   
         
         app.post("/attendence/checkin", ctx->{
+            
+              AuthMiddleWare.requirePermission(PermissionConstant.CHECKIN).handle(ctx);
         
         int userId =ctx.sessionAttribute("userId");
-       
         
         ctx.json(attendenceService.checkin(userId)).status(200);
         
@@ -38,6 +38,8 @@ public class AttendenceController {
         
         
         app.post("/attendence/checkout",ctx->{
+            
+           AuthMiddleWare.requirePermission(PermissionConstant.CHECKOUT).handle(ctx);
             
             int userId =ctx.sessionAttribute("userId");
             
@@ -47,6 +49,8 @@ public class AttendenceController {
         
         
         app.get("/attendence",ctx->{
+            
+              AuthMiddleWare.requirePermission(PermissionConstant.READ_ATTENDENCE_REPORT).handle(ctx);
             
             String date = ctx.queryParam("date");
             
@@ -62,6 +66,8 @@ public class AttendenceController {
         });
         
         app.get("/attendence/me", ctx->{
+            
+              AuthMiddleWare.requirePermission(PermissionConstant.READ_ATTENDENCE).handle(ctx);
         
         int userId = ctx.sessionAttribute("userId");
         

@@ -156,7 +156,8 @@ public class UserRepositoryImplementation implements UserRepository {
 
         String sql = "select u.id as user_id ,u.name as user_name, u.email as user_email,\n"
                 + "d.id as department_id ,d.name as department_name,\n"
-                + "p.id as permission_id, p.name as permission_name\n"
+                + "p.id as permission_id, p.name as permission_name,\n"
+                +"p.section as permission_section,p.description as permission_description\n"
                 + "from users u join department d on u.department_id=d.id left join users_has_permission up on u.id=up.users_id left join permission p on p.id=up.permission_id order by u.id desc";
 
         try (Connection conn = DataBaseSourceClass.getDataSource().getConnection(); PreparedStatement stmt = conn.prepareStatement(sql); ResultSet rs = stmt.executeQuery();) {
@@ -193,7 +194,9 @@ public class UserRepositoryImplementation implements UserRepository {
 
                     PermissionResponse permResponses = new PermissionResponse(
                             permId,
-                            rs.getString("permission_name")
+                            rs.getString("permission_name"),
+                            rs.getString("permission_section"),
+                            rs.getString("permission_description")
                     );
 
                     lastUser.getPermission().add(permResponses);
@@ -225,14 +228,12 @@ public class UserRepositoryImplementation implements UserRepository {
 
                 if (!(rowAffected > 0)) {
 
-                    System.out.println("Failed to Delete ");
-//                     I will throw exception here
+                     throw new OperationFailedException("Failed to add users_has_permission", 500);
                 }
-
             }
 
         } catch (Exception e) {
-             throw new OperationFailedException(e.getMessage(), 500);
+             throw new OperationFailedException("Invalid permission tried to add!", 500);
         }
 
     }
@@ -362,7 +363,7 @@ public class UserRepositoryImplementation implements UserRepository {
 
             while (rs.next()) {
 
-                permissions.add(new PermissionResponse(rs.getInt("permission_id"), rs.getString("name")));
+                permissions.add(new PermissionResponse(rs.getInt("permission_id"), rs.getString("name"),rs.getString("section"),rs.getString("description")));
 
             }
 

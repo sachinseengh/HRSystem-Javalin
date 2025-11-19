@@ -47,7 +47,7 @@ public class PermissionServiceImplementation implements PermissionService {
         
         Permission updatedPermission = permissionRepository.updatePermission(request, permissionId);
        
-        return new PermissionResponse(updatedPermission.getId(),updatedPermission.getName());
+        return new PermissionResponse(updatedPermission.getId(),updatedPermission.getName(),updatedPermission.getSection(),updatedPermission.getDescription());
     }
 
      

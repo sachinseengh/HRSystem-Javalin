@@ -40,11 +40,11 @@ public class AuthMiddleWare {
                 //attach user info to context
                
                 ctx.sessionAttribute("userId",(Integer.parseInt(claims.getSubject())));
-                
+     
                 ctx.sessionAttribute("email",claims.get("email"));
                 
                 ctx.sessionAttribute("permissions",claims.get("permissions"));
-                
+      
             }catch(ExpiredJwtException e){
                 
                 throw new UnauthorizedException("Token Expired ",401);
@@ -62,24 +62,25 @@ public class AuthMiddleWare {
        
        
      // Check if user has a specific permission
-    public static Handler requirePermission(String permissionName) {
+    public static Handler requirePermission(int permissionId) {
         return ctx -> {
             
             requireLogin.handle(ctx);
  
-            Integer userId = ctx.attribute("userId");
+            Integer userId = ctx.sessionAttribute("userId");
+            
             if (userId == null) {
+                
                 throw new UnauthorizedException("UnAuthorized! Please Log in First!", 401);
             }
  
-            List<String> permissions = ctx.attribute("permissions");
+            List<Integer> permissions = ctx.sessionAttribute("permissions");
             
              
             boolean hasPermission = permissions.stream()
-                    .anyMatch(p -> p.equalsIgnoreCase(permissionName));
-
-            if (!hasPermission) {
-                throw new UnauthorizedException("Forbidden! Not Allowed", 403);
+                    .anyMatch(p -> p == permissionId);
+                if (!hasPermission) {
+                throw new UnauthorizedException("Not Authorized !!", 403);
             }
         };
     }

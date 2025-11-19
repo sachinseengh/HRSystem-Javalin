@@ -38,9 +38,7 @@ public class UserServiceImplementation implements UserService {
     
     private final DepartmentRepository departmentRepository = (DepartmentRepository) new DepartmentRepositoryImplementation();
     
-     
-    
-
+ 
     @Override
     public UserResponse createUser(UserRequest user) {
 
@@ -103,7 +101,7 @@ public class UserServiceImplementation implements UserService {
         return new UserResponse(
                 updatedUser.getId(),
                 updatedUser.getName(),
-                updatedUser.getPassword(),
+                updatedUser.getEmail(),
                 new DepartmentResponse(department.getId(), department.getName()),
                 userRepository.getUserPermission(updatedUser.getId()));
     }
@@ -125,37 +123,23 @@ public class UserServiceImplementation implements UserService {
 
             if (BCrypt.checkpw(loginRequest.getPassword(), user.getPassword())) {
 
-                List<String> permissionsName = getUserPermission(user.getId())
-                        .stream().map(PermissionResponse::getName)
+                List<Integer> permissionsIds = getUserPermission(user.getId())
+                        .stream().map(PermissionResponse::getId)
                         .collect(Collectors.toList());
 
                 var claims = Map.of(
                         "email", user.getEmail(),
-                        "permissions", permissionsName
+                        "permissions", permissionsIds,
+                        "department",user.getDepartment(),
+                        "id",user.getId(),
+                        "name",user.getName()
                 );
 
                 String accessToken = JwtUtil.generateAcessToken(String.valueOf(user.getId()), claims);
                 String refreshToken = JwtUtil.generateRefreshToken(String.valueOf(user.getId()), claims);
                 
-                
-                List<PermissionResponse> permResponseList = new ArrayList<>();
-                
-               
-                
-                for(Permission permission: user.getPermissions()){
-                    
-                     PermissionResponse response = new PermissionResponse();
-                    
-                    System.out.println("permission name :::"+permission.getName());
-                    
-                    response.setId(permission.getId());
-                    response.setName(permission.getName());
-                    
-                    permResponseList.add(response);
-                    
-                }
  
-                return new LoginResponse(user.getId(), user.getEmail(), user.getName(), new DepartmentResponse(user.getDepartment().getId(),user.getDepartment().getName()),permResponseList, accessToken, refreshToken);
+                return new LoginResponse( accessToken, refreshToken);
                 
             } else {
                 throw new InvalidCredentialsException("Invalid Email or Password !");

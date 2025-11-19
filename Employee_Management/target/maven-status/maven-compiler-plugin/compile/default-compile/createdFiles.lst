@@ -42,6 +42,7 @@ com\mycompany\employee_management\department\DepartmentRepositoryImplementation.
 com\mycompany\employee_management\permission\PermissionService.class
 com\mycompany\employee_management\department\DepartmentService.class
 com\mycompany\employee_management\permission\PermissionServiceImplementation.class
+com\mycompany\employee_management\PermissionConstant\PermissionConstant.class
 com\mycompany\employee_management\user\User.class
 com\mycompany\employee_management\Attendence\AttendenceService.class
 com\mycompany\employee_management\Attendence\AttendenceRepositoryImplementation.class

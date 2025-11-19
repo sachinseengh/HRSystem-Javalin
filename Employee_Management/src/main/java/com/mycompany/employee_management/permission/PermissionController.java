@@ -4,6 +4,8 @@
  */
 package com.mycompany.employee_management.permission;
 
+import com.mycompany.employee_management.MiddleWare.AuthMiddleWare;
+import com.mycompany.employee_management.PermissionConstant.PermissionConstant;
 import com.mycompany.employee_management.department.*;
 import io.javalin.Javalin;
 
@@ -13,43 +15,47 @@ import io.javalin.Javalin;
  */
 public class PermissionController {
 
-
     private final PermissionService permissionService = new PermissionServiceImplementation();
 
     public PermissionController(Javalin app) {
-        
-        
-        
-        app.post("/permission",ctx->{
-            
+
+        app.before("/permission", AuthMiddleWare.requireLogin);
+
+        app.post("/permission", ctx -> {
+
+            AuthMiddleWare.requirePermission(PermissionConstant.CREATE_PERMISSION).handle(ctx);
+
             PermissionRequest body = ctx.bodyAsClass(PermissionRequest.class);
-            
+
             ctx.status(200).json(permissionService.createPermission(body));
-            
+
         });
-        
-        
-        app.delete("/permission/{permId}",ctx->{
-        
-            int permId = ctx.pathParamAsClass("permId",Integer.class).get();
-            
-           ctx.status(200).json(permissionService.deletePermission(permId));
-        
+
+        app.delete("/permission/{permId}", ctx -> {
+
+            AuthMiddleWare.requirePermission(PermissionConstant.DELETE_PERMISSION).handle(ctx);
+
+            int permId = ctx.pathParamAsClass("permId", Integer.class).get();
+
+            ctx.status(200).json(permissionService.deletePermission(permId));
+
         });
-        
-        app.put("/permission",ctx->{
-            
-            
+
+        app.put("/permission", ctx -> {
+
+            AuthMiddleWare.requirePermission(PermissionConstant.UPDATE_PERMISSION).handle(ctx);
+
             int permissionId = Integer.parseInt(ctx.queryParam("permission_id"));
-            
+
             PermissionRequest body = ctx.bodyAsClass(PermissionRequest.class);
-            
+
             ctx.status(200).json(permissionService.updatePermission(body, permissionId));
-            
+
         });
-                
-        
-        app.get("/permission",ctx->{
+
+        app.get("/permission", ctx -> {
+            
+                 AuthMiddleWare.requirePermission(PermissionConstant.DELETE_PERMISSION).handle(ctx);
             
             ctx.json(200).json(permissionService.getAllPermissions());
         });

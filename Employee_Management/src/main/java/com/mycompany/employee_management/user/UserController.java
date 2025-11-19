@@ -5,6 +5,7 @@
 package com.mycompany.employee_management.user;
  
 import com.mycompany.employee_management.MiddleWare.AuthMiddleWare;
+import com.mycompany.employee_management.PermissionConstant.PermissionConstant;
 import com.mycompany.employee_management.exception.UnauthorizedException;
  
 import com.mycompany.employee_management.security.JwtUtil;
@@ -31,12 +32,9 @@ public class UserController {
     
     public UserController(Javalin app)
     {
-         
         
-//        app.before("/user",AuthMiddleWare.requireLogin);
-//        app.before("/user/users",AuthMiddleWare.requirePermission("Read"));
-        
-       
+        app.before("/user",AuthMiddleWare.requireLogin);
+
         app.post("/login",ctx->{
             
             LoginRequest  loginRequest = ctx.bodyAsClass(LoginRequest.class);
@@ -48,27 +46,28 @@ public class UserController {
         
         app.get("/logout",ctx->{
   
-        ctx.json(userService.logout()).status(401);
+        ctx.json(userService.logout()).status(200);
         
         });
                 
  
         app.get("/user",ctx->{
-            
+            AuthMiddleWare.requirePermission(PermissionConstant.READ_USER).handle(ctx);
             ctx.status(200).json(userService.getAllUser());
            
         });
         
         app.post("/user",ctx->{
             
+             AuthMiddleWare.requirePermission(PermissionConstant.CREATE_USER).handle(ctx);
+                
                  var body =  ctx.bodyValidator(Map.class)
                    .check(b->b.containsKey("name"),"Field name is required !")
                    .check(b->b.get("name") instanceof String,"Name must be String !")
                    .check(b->b.containsKey("department"),"Field department is required !")
                    .check(b->b.get("department") instanceof Integer,"Department must be Number !")
                          .get();
-            
-            
+           
         String name =(String) body.get("name");
          int department =(int) body.get("department");
          
@@ -84,6 +83,7 @@ public class UserController {
         
         app.put("/user", ctx->{
             
+             AuthMiddleWare.requirePermission(PermissionConstant.UPDATE_USER).handle(ctx);
             
             UserRequest userRequest =ctx.bodyAsClass(UserRequest.class);
             
@@ -93,6 +93,8 @@ public class UserController {
         
         
         app.delete("/user/{id}",ctx->{
+            
+             AuthMiddleWare.requirePermission(PermissionConstant.DELETE_USER).handle(ctx);
             
             int user_id = Integer.parseInt(ctx.pathParam("id"));
             ctx.status(200).result(userService.deleteUser(user_id).toString());
@@ -106,7 +108,7 @@ public class UserController {
             String token = ctx.bodyValidator(Map.class)
                     .check(b->b.containsKey("refreshToken"),"refreshToken required")
                     .get()
-                            .get("refreshToken").toString();
+                    .get("refreshToken").toString();
 
             
             try{
@@ -133,6 +135,8 @@ public class UserController {
         });
  
         app.get("/dashboard", ctx->{
+            
+             AuthMiddleWare.requirePermission(PermissionConstant.READ_DASHBOARD).handle(ctx);
             ctx.json(userService.getDashboardDetails()).status(200);
         });
         
