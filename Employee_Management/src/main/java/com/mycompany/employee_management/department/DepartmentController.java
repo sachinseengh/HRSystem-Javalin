@@ -41,7 +41,7 @@ public class DepartmentController {
 
         app.delete("/department/{id}", ctx -> {
 
-            AuthMiddleWare.requirePermission(PermissionConstant.DELETE_PERMISSION).handle(ctx);
+            AuthMiddleWare.requirePermission(PermissionConstant.DELETE_DEPARTMENT).handle(ctx);
 
             int departmentId = Integer.parseInt(ctx.pathParam("id"));
 
@@ -50,7 +50,7 @@ public class DepartmentController {
 
         app.get("/department", ctx -> {
             
-              AuthMiddleWare.requirePermission(PermissionConstant.READ_PERMISSION).handle(ctx);
+              AuthMiddleWare.requirePermission(PermissionConstant.READ_DEPARTMENT).handle(ctx);
 
             ctx.json(200).json(departmentService.getAllDepartments());
         });

@@ -50,7 +50,7 @@ public class AppExceptionHandler {
   
          app.exception(InvalidCredentialsException.class,(e,ctx)->{
         
-            ctx.json(getErrors(e.getMessage())).status(401);
+            ctx.json(getErrors(e.getMessage())).status(404);
         });
         
         app.exception(DuplicateFoundException.class,(e,ctx)->{

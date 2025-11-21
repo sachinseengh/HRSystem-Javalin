@@ -55,7 +55,7 @@ public class PermissionController {
 
         app.get("/permission", ctx -> {
             
-                 AuthMiddleWare.requirePermission(PermissionConstant.DELETE_PERMISSION).handle(ctx);
+                 AuthMiddleWare.requirePermission(PermissionConstant.READ_PERMISSION).handle(ctx);
             
             ctx.json(200).json(permissionService.getAllPermissions());
         });

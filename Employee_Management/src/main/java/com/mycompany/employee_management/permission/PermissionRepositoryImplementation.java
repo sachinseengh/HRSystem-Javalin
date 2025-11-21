@@ -13,6 +13,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.SQLIntegrityConstraintViolationException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
@@ -111,8 +112,7 @@ public class PermissionRepositoryImplementation implements PermissionRepository 
 
     @Override
     public String deletePermission(int permissionId) {
-
-        
+ 
         String sql = "delete from permission where id =?";
 
         try (
@@ -125,13 +125,14 @@ public class PermissionRepositoryImplementation implements PermissionRepository 
                 return "Permission deleted successfully";
             } else {
                 return "Permisson deletion Failed!";
-            }
-
+            } 
+        }catch(SQLIntegrityConstraintViolationException e){
+            throw new OperationFailedException("Failed! Users have this permission ! ",400);
+            
         } catch (SQLException ex) {
-            System.out.println("Error :" + ex.getMessage());
+            
             throw new OperationFailedException("Failed to Delete Permission with Id :", permissionId);
         }
-
     }
 
     @Override

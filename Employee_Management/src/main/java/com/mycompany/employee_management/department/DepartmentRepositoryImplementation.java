@@ -93,7 +93,7 @@ public class DepartmentRepositoryImplementation implements DepartmentRepository 
             
         }catch(SQLIntegrityConstraintViolationException e){
             
-            throw new OperationFailedException("Failed! Users belong to this departmemnt",403);
+            throw new OperationFailedException("Failed! Users belong to this departmemnt",400);
 
         } catch (SQLException ex) {
             System.out.println("Error :" + ex.getMessage());
