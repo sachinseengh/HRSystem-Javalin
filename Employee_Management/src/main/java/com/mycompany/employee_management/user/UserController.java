@@ -1,7 +1,9 @@
 package com.mycompany.employee_management.user;
 
+import com.cloudinary.utils.ObjectUtils;
 import com.mycompany.employee_management.MiddleWare.AuthMiddleWare;
 import com.mycompany.employee_management.PermissionConstant.PermissionConstant;
+import com.mycompany.employee_management.config.CloudinaryConfig;
 import com.mycompany.employee_management.exception.UnauthorizedException;
 
 import com.mycompany.employee_management.security.JwtUtil;
@@ -13,6 +15,7 @@ import com.mycompany.employee_management.user.passwordChange.ChangePasswordReque
 
 import io.javalin.Javalin;
 import io.javalin.http.UploadedFile;
+import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -73,8 +76,6 @@ public class UserController {
 //         String password=(String) body.get("password");
 //         
 //        List<Integer> permissions = (List<Integer>) body.get("permissions");
-
-
             String name = ctx.formParam("name");
             int department = Integer.parseInt(ctx.formParam("department"));
             String email = ctx.formParam("email");
@@ -103,37 +104,52 @@ public class UserController {
                 return;
             }
 
-            fileName =UUID.randomUUID()+"_"+file.filename();
-            
-            UserResponse userResponse = userService.createUser(new UserRequest(name,email,password,department,permissions,fileName));
-            
-            Path path = Paths.get("uploads/"+fileName);
-            
-            Files.createDirectories(path.getParent());
-            
-            try(InputStream is = file.content()) {
-                Files.copy(is,path,StandardCopyOption.REPLACE_EXISTING);
+//            fileName =UUID.randomUUID()+"_"+file.filename();
+//          now uploading to cloudinary
+            String profileImageUrl = "";
+            try (InputStream is = file.content(); ByteArrayOutputStream buffer = new ByteArrayOutputStream()) {
+
+                byte[] data = new byte[1024];
+                int nRead;
+                while ((nRead = is.read(data, 0, data.length)) != -1) {
+                    buffer.write(data, 0, nRead);
+                }
+                buffer.flush();
+
+                Map uploadResult = CloudinaryConfig.cloudinary.uploader().upload(
+                        buffer.toByteArray(),
+                        ObjectUtils.asMap("folder", "profile_images", "resource_type", "image")
+                );
+
+                profileImageUrl = (String) uploadResult.get("secure_url");
             }
 
+            UserResponse userResponse = userService.createUser(new UserRequest(name, email, password, department, permissions, profileImageUrl));
+
+            //for file storage
+//            Path path = Paths.get("uploads/" + fileName);
+//
+//            Files.createDirectories(path.getParent());
+//
+//            try (InputStream is = file.content()) {
+//                Files.copy(is, path, StandardCopyOption.REPLACE_EXISTING);
+//            }
             ctx.status(201).json(userResponse);
         });
 
         app.put("/user", ctx -> {
 
             AuthMiddleWare.requirePermission(PermissionConstant.UPDATE_USER).handle(ctx);
-            
-            
-              String name = ctx.formParam("name");
+
+            String name = ctx.formParam("name");
             int department = Integer.parseInt(ctx.formParam("department"));
             String email = ctx.formParam("email");
             String password = ctx.formParam("password");
 
             List<Integer> permissions = ctx.formParams("permissions").stream()
                     .map(Integer::parseInt).toList();
-            
-           
 
-            UserRequest userRequest =  new UserRequest(name,email,password,department,permissions,null);
+            UserRequest userRequest = new UserRequest(name, email, password, department, permissions, null);
 
             ctx.status(200).json(userService.updateUser(userRequest, Integer.parseInt(ctx.queryParam("user_id"))));
 

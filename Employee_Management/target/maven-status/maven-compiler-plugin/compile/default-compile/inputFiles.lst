@@ -16,6 +16,7 @@ D:\Confidential\Employee-System\Employee_Management\src\main\java\com\mycompany\
 D:\Confidential\Employee-System\Employee_Management\src\main\java\com\mycompany\employee_management\config\AppConfig.java
 D:\Confidential\Employee-System\Employee_Management\src\main\java\com\mycompany\employee_management\user\loginPojo\LoginResponse.java
 D:\Confidential\Employee-System\Employee_Management\src\main\java\com\mycompany\employee_management\Employee_Management.java
+D:\Confidential\Employee-System\Employee_Management\src\main\java\com\mycompany\employee_management\config\CloudinaryConfig.java
 D:\Confidential\Employee-System\Employee_Management\src\main\java\com\mycompany\employee_management\MiddleWare\AuthMiddleWare.java
 D:\Confidential\Employee-System\Employee_Management\src\main\java\com\mycompany\employee_management\config\DataBaseSourceClass.java
 D:\Confidential\Employee-System\Employee_Management\src\main\java\com\mycompany\employee_management\PermissionConstant\PermissionConstant.java

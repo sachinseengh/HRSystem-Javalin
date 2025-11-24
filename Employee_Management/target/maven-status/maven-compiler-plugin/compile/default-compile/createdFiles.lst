@@ -8,6 +8,7 @@ com\mycompany\employee_management\user\UserService.class
 com\mycompany\employee_management\user\UserServiceImplementation.class
 com\mycompany\employee_management\department\Department.class
 com\mycompany\employee_management\user\loginPojo\LoginRequest.class
+com\mycompany\employee_management\config\CloudinaryConfig.class
 com\mycompany\employee_management\department\DepartmentRequest.class
 com\mycompany\employee_management\department\DepartmentServiceImplementation.class
 com\mycompany\employee_management\Attendence\AttendenceServiceImplementation.class

@@ -36,14 +36,7 @@ public class Employee_Management {
        
         var app = Javalin.create(config->{
         
-        config.registerPlugin(new OpenApiPlugin(pluginConfig -> {
-                pluginConfig.withDefinitionConfiguration((version, definition) -> {
-                    definition.withOpenApiInfo(info -> info.setTitle("Javalin OpenAPI example"));
-                });
-            }));
-            config.registerPlugin(new SwaggerPlugin());
-            config.registerPlugin(new ReDocPlugin());
-            
+     
          config.staticFiles.add(staticFileConfig -> {
         staticFileConfig.hostedPath = "/uploads"; // URL prefix
         staticFileConfig.directory = "uploads";   // folder on disk
@@ -52,8 +45,6 @@ public class Employee_Management {
         
         
         }).start(7071);
-        
-        
         
         app.exception(ValidationException.class,(e,ctx)->{
             
