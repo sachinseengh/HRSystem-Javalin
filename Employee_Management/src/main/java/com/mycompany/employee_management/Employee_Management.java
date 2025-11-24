@@ -17,6 +17,7 @@ import com.mycompany.employee_management.user.UserService;
 import com.mycompany.employee_management.user.UserServiceImplementation;
 import io.javalin.Javalin;
 import io.javalin.http.Handler; 
+import io.javalin.http.staticfiles.Location;
 import io.javalin.openapi.plugin.OpenApiPlugin;
 import io.javalin.openapi.plugin.redoc.ReDocPlugin;
 import io.javalin.openapi.plugin.swagger.SwaggerPlugin;
@@ -42,7 +43,12 @@ public class Employee_Management {
             }));
             config.registerPlugin(new SwaggerPlugin());
             config.registerPlugin(new ReDocPlugin());
-       
+            
+         config.staticFiles.add(staticFileConfig -> {
+        staticFileConfig.hostedPath = "/uploads"; // URL prefix
+        staticFileConfig.directory = "uploads";   // folder on disk
+        staticFileConfig.location = Location.EXTERNAL; // external folder
+    });
         
         
         }).start(7071);

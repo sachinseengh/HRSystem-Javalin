@@ -45,7 +45,7 @@ public class UserRepositoryImplementation implements UserRepository {
 
         log.info("employee insertion initiated.");
 
-        String sql = "insert into users(name,email,password,department_id) values (?,?,?,?) ";
+        String sql = "insert into users(name,email,password,department_id,profile_image) values (?,?,?,?,?) ";
 
         int userId = -1;
 
@@ -57,8 +57,9 @@ public class UserRepositoryImplementation implements UserRepository {
             stmt.setString(1, user.getName());
             stmt.setString(2, user.getEmail());
             stmt.setString(3, user.getPassword());
-
+           
             stmt.setInt(4, user.getDepartment().getId());
+             stmt.setString(5,user.getProfileImage());
 
             int rowAffected = stmt.executeUpdate();
 
@@ -76,7 +77,8 @@ public class UserRepositoryImplementation implements UserRepository {
                             user.getName(),
                             user.getEmail(),
                             user.getDepartment(),
-                            List.of()
+                            List.of(),
+                            user.getProfileImage()
                     );
                 }
             } catch (Exception e) {
@@ -140,7 +142,8 @@ public class UserRepositoryImplementation implements UserRepository {
                     user.getName(),
                     user.getEmail(),
                     user.getDepartment(),
-                    List.of()
+                    List.of(),
+                    user.getProfileImage()
             );
 
         } catch (Exception e) {
@@ -400,7 +403,7 @@ public class UserRepositoryImplementation implements UserRepository {
     }
 @Override
 public Optional<User> findById(int userId) {
-    String sql = "SELECT u.id AS user_id, u.name AS user_name, u.email AS user_email, u.password AS user_password, "
+    String sql = "SELECT u.id AS user_id, u.name AS user_name, u.email AS user_email, u.password AS user_password,u.profile_image AS profile_image, "
                + "p.id AS permission_id, p.name AS permission_name, d.id AS department_id, d.name AS department_name "
                + "FROM users u "
                + "JOIN department d ON u.department_id=d.id "
@@ -429,7 +432,8 @@ public Optional<User> findById(int userId) {
                         rs.getString("user_email"),
                         rs.getString("user_password"),
                         dept,
-                        new ArrayList<>()
+                        new ArrayList<>(),
+                        rs.getString("profile_image")
                 ));
             }
 
@@ -455,13 +459,13 @@ public Optional<User> findById(int userId) {
 public Optional<User> findByEmail(String email) {
     
     
-    String sql = "SELECT u.id AS user_id, u.name AS user_name, u.email AS user_email, u.password AS user_password, " +
-                 "p.id AS permission_id, p.name AS permission_name, d.id AS department_id, d.name AS department_name " +
-                 "FROM users u " +
-                 "JOIN department d ON u.department_id = d.id " +
-                 "LEFT JOIN users_has_permission up ON up.users_id = u.id " +
-                 "LEFT JOIN permission p ON up.permission_id = p.id " +
-                 "WHERE u.email = ?";
+        String sql = "SELECT u.id AS user_id, u.name AS user_name, u.email AS user_email, u.password AS user_password,u.profile_image AS profile_image ," +
+                     "p.id AS permission_id, p.name AS permission_name, d.id AS department_id, d.name AS department_name " +
+                     "FROM users u " +
+                     "JOIN department d ON u.department_id = d.id " +
+                     "LEFT JOIN users_has_permission up ON up.users_id = u.id " +
+                     "LEFT JOIN permission p ON up.permission_id = p.id " +
+                     "WHERE u.email = ?";
 
     Optional<User> user = Optional.empty(); 
     System.out.println("user--------->"+user);
@@ -486,7 +490,8 @@ public Optional<User> findByEmail(String email) {
                         rs.getString("user_email"),
                         rs.getString("user_password"),
                         department,
-                        new ArrayList<>()
+                        new ArrayList<>(),
+                        rs.getString("profile_image")
                 ));
             }
 

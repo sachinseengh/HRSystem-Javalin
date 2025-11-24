@@ -54,7 +54,7 @@ public class UserServiceImplementation implements UserService {
         
         Department department = departmentRepository.findById(user.getDepartment()).orElseThrow(()->new ResourceNotFoundException("Department Not Found"));
 
-        User savedUser = userRepository.save(new User(user.getName(), user.getEmail(), hashedPassword,  department, new ArrayList<>()));
+        User savedUser = userRepository.save(new User(user.getName(), user.getEmail(), hashedPassword,  department, new ArrayList<>(),user.getProfileImage()));
 
         userRepository.addNewUserPermissions(user.getPermissions(), savedUser.getId());
 
@@ -126,13 +126,16 @@ public class UserServiceImplementation implements UserService {
                 List<Integer> permissionsIds = getUserPermission(user.getId())
                         .stream().map(PermissionResponse::getId)
                         .collect(Collectors.toList());
-
+                
+                String profileImageURL = user.getProfileImage() != null ? "http://localhost:7071/uploads/"+user.getProfileImage():"";
+               
                 var claims = Map.of(
                         "email", user.getEmail(),
                         "permissions", permissionsIds,
                         "department",user.getDepartment(),
                         "id",user.getId(),
-                        "name",user.getName()
+                        "name",user.getName(),
+                        "profileImageURL",profileImageURL
                 );
 
                 String accessToken = JwtUtil.generateAcessToken(String.valueOf(user.getId()), claims);
@@ -146,7 +149,7 @@ public class UserServiceImplementation implements UserService {
             }
 
         } catch (Exception e) {
-            throw new InvalidCredentialsException("Invalid Email or Password !");
+            throw new InvalidCredentialsException(e.getMessage());
         }
 
     }

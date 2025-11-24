@@ -23,6 +23,16 @@ public class UserRequest {
     private String password;
     
     private List<Integer> permissions;
+    
+    private String profileImage;
+
+    public String getProfileImage() {
+        return profileImage;
+    }
+
+    public void setProfileImage(String profileImage) {
+        this.profileImage = profileImage;
+    }
 
     public String getName() {
         return name;
@@ -43,6 +53,7 @@ public class UserRequest {
     public List<Integer> getPermissions() {
         return permissions;
     }
+   
 
     public void setPermissions(List<Integer> permissions) {
         this.permissions = permissions;
@@ -64,12 +75,13 @@ public class UserRequest {
         this.password = password;
     }
 
-    public UserRequest(String name,  String email, String password,int department, List<Integer> permissions) {
+    public UserRequest(String name,  String email, String password,int department, List<Integer> permissions,String profileImage) {
         this.name = name;
         this.department = department;
         this.email = email;
         this.password = password;
         this.permissions = permissions;
+        this.profileImage = profileImage;
     }
  
    

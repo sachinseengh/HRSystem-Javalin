@@ -26,6 +26,17 @@ public class User {
             
     private List<Permission> permissions = new ArrayList<>();
     
+    private String profileImage;
+
+    public String getProfileImage() {
+        return profileImage;
+    }
+
+    public void setProfileImage(String profileImage) {
+        this.profileImage = profileImage;
+    }
+    
+    
     
     public int getId() {
         return id;
@@ -83,30 +94,33 @@ public class User {
         this.permissions = permissions;
     }
 
-    public User(int id, String name, String email,Department department, List<Permission> permissions) {
+    public User(int id, String name, String email,Department department, List<Permission> permissions,String profileImage) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.password = password;
         this.department = department;
         this.permissions = permissions;
+        this.profileImage = profileImage;
     }
 
-    public User(String name, String email, String password, Department department, List<Permission> permissions) {
+    public User(String name, String email, String password, Department department, List<Permission> permissions,String profileImage) {
         this.name = name;
         this.email = email;
         this.password = password;
         this.department = department;
         this.permissions = permissions;
+        this.profileImage = profileImage;
     }
 
-    public User(int id, String name, String email, String password, Department department, List<Permission> permissions) {
+    public User(int id, String name, String email, String password, Department department, List<Permission> permissions,String profileImage) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.password = password;
         this.department = department;
         this.permissions = permissions;
+        this.profileImage = profileImage;
     }
     
     

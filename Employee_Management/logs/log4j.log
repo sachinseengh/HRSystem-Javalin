@@ -3470,3 +3470,569 @@
 [INFO ] 2025-11-21 10:56:33.495  DataBaseSourceClass:71 - returning the old db instance
 [INFO ] 2025-11-21 10:56:35.494  DataBaseSourceClass:71 - returning the old db instance
 [INFO ] 2025-11-21 10:56:35.526  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-21 15:57:42.682  DataBaseSourceClass:32 - Checking the application.properties !
+[INFO ] 2025-11-21 15:57:43.578  DataBaseSourceClass:42 - application.properties found !
+[INFO ] 2025-11-21 15:57:43.626  DataBaseSourceClass:53 - Creating new db instance
+[INFO ] 2025-11-21 15:57:43.706  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-21 15:57:44.002  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-21 15:57:44.227  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-21 15:57:45.239  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-21 15:57:45.293  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-21 15:57:46.408  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-21 15:57:46.976  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-21 15:57:47.084  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-21 15:57:48.133  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-21 15:57:48.178  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:32:23.309  DataBaseSourceClass:32 - Checking the application.properties !
+[INFO ] 2025-11-23 15:32:24.383  DataBaseSourceClass:42 - application.properties found !
+[INFO ] 2025-11-23 15:32:24.433  DataBaseSourceClass:53 - Creating new db instance
+[INFO ] 2025-11-23 15:32:24.511  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:32:24.865  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:32:25.035  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:32:26.089  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:32:26.146  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:32:30.528  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:32:31.031  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:32:31.139  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:32:31.870  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:32:31.904  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:32:50.574  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:32:50.636  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:32:51.992  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:32:52.042  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:32:56.065  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:32:56.128  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:33:06.192  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:33:06.237  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:33:08.908  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:33:08.944  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:33:11.279  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:33:11.327  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:33:17.793  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:33:17.841  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:33:20.379  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:33:20.415  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:33:23.836  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:33:23.883  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:33:29.059  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:33:29.098  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:33:34.645  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:33:34.693  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:33:54.673  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:33:54.721  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:34:22.847  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:34:22.894  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:34:33.563  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:34:33.600  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:35:11.093  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:35:11.133  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:35:15.715  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:35:15.755  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:35:22.107  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:35:22.148  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:35:24.156  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:35:24.190  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:35:27.426  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:35:27.472  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:35:39.508  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:35:39.544  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:35:41.762  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:35:41.796  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:35:48.014  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:35:48.059  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:35:55.568  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:35:55.607  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:35:57.383  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:35:57.416  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:35:58.752  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:35:58.794  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:36:01.773  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:36:01.816  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:36:06.077  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:36:06.114  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:36:11.883  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:36:11.925  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:36:13.625  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:36:13.671  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:36:16.209  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:36:16.244  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:36:21.025  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:36:21.076  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:36:30.659  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:36:30.698  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:36:39.893  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:36:39.929  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:36:40.944  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:36:40.980  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:36:45.097  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:36:45.137  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:36:54.832  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:36:54.869  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:37:04.618  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:37:04.654  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:37:15.126  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:37:15.171  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:37:16.970  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:37:17.009  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:37:20.910  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:37:20.957  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:37:37.841  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:37:37.881  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:38:03.411  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:38:03.565  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:41:28.475  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:41:28.569  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:41:30.854  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:41:30.886  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:43:14.758  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:43:14.834  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:43:17.960  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:43:17.998  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:44:36.908  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:44:37.058  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:44:39.870  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:44:39.899  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:45:21.053  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:45:21.106  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:45:24.154  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-23 15:45:24.187  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 10:54:50.656  DataBaseSourceClass:32 - Checking the application.properties !
+[INFO ] 2025-11-24 10:54:51.693  DataBaseSourceClass:42 - application.properties found !
+[INFO ] 2025-11-24 10:54:51.738  DataBaseSourceClass:53 - Creating new db instance
+[INFO ] 2025-11-24 10:54:51.820  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 10:54:52.194  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 10:54:52.333  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 10:54:53.584  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 10:54:53.763  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 10:56:28.486  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 10:56:32.454  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 10:56:32.673  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 10:56:33.385  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 10:56:33.424  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 10:57:14.018  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 10:57:14.071  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 10:57:18.716  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 10:57:18.753  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 10:57:19.751  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 10:57:19.812  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 10:57:23.526  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 10:57:23.572  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 10:57:26.745  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 10:57:26.788  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 10:58:53.846  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 10:58:53.973  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 10:59:16.504  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 10:59:16.569  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 10:59:51.111  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 10:59:51.174  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:00:02.388  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:00:02.448  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:00:03.950  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:00:03.992  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:00:17.101  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:00:17.143  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:00:54.556  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:00:54.618  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:01:14.429  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:01:14.500  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:02:54.488  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:02:54.539  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:03:12.079  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:03:12.150  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:03:17.512  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:03:17.574  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:03:27.922  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:03:27.967  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:03:28.646  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:03:28.680  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:19:28.871  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:19:28.899  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:19:29.012  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:19:29.133  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:19:29.327  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:19:33.023  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:19:33.193  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:19:34.487  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:19:34.520  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:20:17.707  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:20:17.752  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:20:21.437  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:20:21.468  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:20:46.553  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:20:46.599  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:20:49.136  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:20:49.170  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:21:12.431  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:21:12.465  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:21:18.417  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:21:18.477  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:21:39.104  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:21:39.155  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:21:44.809  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:21:44.892  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:21:55.110  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:21:55.157  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:22:17.777  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:22:17.825  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:22:40.340  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:22:40.412  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:22:51.212  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:22:51.265  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:22:57.333  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:22:57.369  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:24:00.312  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:24:00.366  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:24:06.126  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:24:06.159  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:24:16.470  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:24:16.520  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:24:23.878  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:24:23.912  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:24:27.218  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:24:27.276  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:24:34.527  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:24:34.581  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:25:01.534  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:25:01.575  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:25:05.390  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:25:05.431  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:25:07.682  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:25:07.769  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:25:08.746  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:25:08.775  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:29:07.089  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:29:07.137  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:29:12.802  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 11:29:12.841  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:28:44.927  DataBaseSourceClass:32 - Checking the application.properties !
+[INFO ] 2025-11-24 12:28:45.568  DataBaseSourceClass:42 - application.properties found !
+[INFO ] 2025-11-24 12:28:45.600  DataBaseSourceClass:53 - Creating new db instance
+[INFO ] 2025-11-24 12:28:45.674  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:28:46.003  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:29:09.228  DataBaseSourceClass:32 - Checking the application.properties !
+[INFO ] 2025-11-24 12:29:09.896  DataBaseSourceClass:42 - application.properties found !
+[INFO ] 2025-11-24 12:29:09.947  DataBaseSourceClass:53 - Creating new db instance
+[INFO ] 2025-11-24 12:29:10.010  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:29:10.323  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:29:12.324  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:29:12.359  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:29:13.386  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:29:13.412  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:29:14.006  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:29:14.032  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:29:14.219  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:29:14.243  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:29:14.437  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:29:14.472  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:29:31.068  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:29:31.094  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:30:50.022  DataBaseSourceClass:32 - Checking the application.properties !
+[INFO ] 2025-11-24 12:30:50.540  DataBaseSourceClass:42 - application.properties found !
+[INFO ] 2025-11-24 12:30:50.593  DataBaseSourceClass:53 - Creating new db instance
+[INFO ] 2025-11-24 12:30:50.658  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:30:50.994  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:30:59.230  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:30:59.262  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:31:59.008  DataBaseSourceClass:32 - Checking the application.properties !
+[INFO ] 2025-11-24 12:32:00.104  DataBaseSourceClass:42 - application.properties found !
+[INFO ] 2025-11-24 12:32:00.278  DataBaseSourceClass:53 - Creating new db instance
+[INFO ] 2025-11-24 12:32:00.512  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:32:01.692  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:35:33.751  DataBaseSourceClass:32 - Checking the application.properties !
+[INFO ] 2025-11-24 12:35:34.841  DataBaseSourceClass:42 - application.properties found !
+[INFO ] 2025-11-24 12:35:35.002  DataBaseSourceClass:53 - Creating new db instance
+[INFO ] 2025-11-24 12:35:35.234  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:35:36.400  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:37:30.025  DataBaseSourceClass:32 - Checking the application.properties !
+[INFO ] 2025-11-24 12:37:31.100  DataBaseSourceClass:42 - application.properties found !
+[INFO ] 2025-11-24 12:37:31.258  DataBaseSourceClass:53 - Creating new db instance
+[INFO ] 2025-11-24 12:37:31.492  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:37:32.678  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:39:26.756  DataBaseSourceClass:32 - Checking the application.properties !
+[INFO ] 2025-11-24 12:39:27.412  DataBaseSourceClass:42 - application.properties found !
+[INFO ] 2025-11-24 12:39:27.454  DataBaseSourceClass:53 - Creating new db instance
+[INFO ] 2025-11-24 12:39:27.534  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:39:34.135  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:40:48.949  DataBaseSourceClass:32 - Checking the application.properties !
+[INFO ] 2025-11-24 12:40:49.678  DataBaseSourceClass:42 - application.properties found !
+[INFO ] 2025-11-24 12:40:49.727  DataBaseSourceClass:53 - Creating new db instance
+[INFO ] 2025-11-24 12:40:49.799  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:40:50.135  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:40:50.322  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:40:51.347  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:40:51.404  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:41:02.322  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:41:02.537  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:41:03.997  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:41:04.050  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:41:25.260  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:41:25.412  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:41:25.427  UserRepositoryImplementation:46 - employee insertion initiated.
+[INFO ] 2025-11-24 12:41:25.461  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:41:25.495  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:41:25.536  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:41:25.568  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:41:25.599  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:41:43.838  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:41:43.938  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:53:07.480  DataBaseSourceClass:32 - Checking the application.properties !
+[INFO ] 2025-11-24 12:53:08.702  DataBaseSourceClass:42 - application.properties found !
+[INFO ] 2025-11-24 12:53:08.791  DataBaseSourceClass:53 - Creating new db instance
+[INFO ] 2025-11-24 12:53:08.941  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:53:11.743  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:53:12.097  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:53:13.413  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:53:13.498  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:53:31.778  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:53:32.130  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:53:32.212  UserRepositoryImplementation:46 - employee insertion initiated.
+[INFO ] 2025-11-24 12:53:32.258  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:53:32.318  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:53:32.388  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:53:32.434  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:53:32.488  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:53:40.767  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:53:40.805  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:53:41.495  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:53:41.544  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:53:57.532  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:53:57.705  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:53:59.879  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:53:59.957  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:54:22.950  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:54:23.285  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:54:23.340  UserRepositoryImplementation:46 - employee insertion initiated.
+[INFO ] 2025-11-24 12:54:23.385  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:54:23.441  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:54:23.490  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:54:23.541  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:54:23.594  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:55:12.987  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:55:13.038  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:55:37.787  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:55:37.880  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:55:37.911  UserRepositoryImplementation:46 - employee insertion initiated.
+[INFO ] 2025-11-24 12:55:37.930  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:55:37.957  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:55:37.989  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:55:38.026  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:55:38.039  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:55:38.111  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:55:38.159  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:58:20.620  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:58:20.645  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:58:20.792  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:58:20.951  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 12:58:21.156  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:04:10.952  DataBaseSourceClass:32 - Checking the application.properties !
+[INFO ] 2025-11-24 13:04:11.762  DataBaseSourceClass:42 - application.properties found !
+[INFO ] 2025-11-24 13:04:11.803  DataBaseSourceClass:53 - Creating new db instance
+[INFO ] 2025-11-24 13:04:11.872  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:04:12.385  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:04:15.386  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:04:15.512  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:04:31.457  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:04:31.583  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:04:51.453  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:04:51.576  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:04:58.344  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:04:58.449  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:05:09.407  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:05:09.522  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:05:18.511  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:05:18.628  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:05:25.382  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:05:25.490  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:05:48.648  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:05:48.744  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:05:55.550  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:05:55.658  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:06:13.336  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:06:13.420  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:06:46.136  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:06:46.240  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:06:54.572  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:06:54.840  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:07:04.843  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:07:06.293  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:07:06.459  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:07:28.606  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:07:28.621  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:07:28.865  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:07:34.951  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:07:34.969  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:07:35.093  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:07:56.042  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:07:56.066  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:07:56.218  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:07:57.585  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:07:57.607  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:07:57.752  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:07:57.762  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:07:57.801  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:07:57.907  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:08:12.962  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:08:12.986  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:08:13.123  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:08:18.127  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:08:18.148  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:08:18.260  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:08:21.508  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:08:21.509  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:08:21.513  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:08:21.533  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:08:21.549  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:08:21.564  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:08:21.667  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:08:21.686  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:08:21.698  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:08:57.864  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:08:57.887  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:08:58.047  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:12:51.393  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:12:51.425  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:12:51.568  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:14:42.543  DataBaseSourceClass:32 - Checking the application.properties !
+[INFO ] 2025-11-24 13:14:50.261  DataBaseSourceClass:42 - application.properties found !
+[INFO ] 2025-11-24 13:14:52.530  DataBaseSourceClass:53 - Creating new db instance
+[INFO ] 2025-11-24 13:14:52.767  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:15:03.290  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:16:18.810  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:18:17.671  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:18:17.853  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:18:19.149  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:18:19.321  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:18:19.686  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:18:19.854  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:21:09.947  DataBaseSourceClass:32 - Checking the application.properties !
+[INFO ] 2025-11-24 13:21:10.551  DataBaseSourceClass:42 - application.properties found !
+[INFO ] 2025-11-24 13:21:10.614  DataBaseSourceClass:53 - Creating new db instance
+[INFO ] 2025-11-24 13:21:10.714  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:21:11.022  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:21:11.246  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:21:12.402  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:21:12.572  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:21:25.999  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:21:26.027  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:21:26.201  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:21:37.256  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:21:37.296  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:21:37.443  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:21:37.561  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:21:37.751  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:21:41.563  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:21:42.371  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:21:42.549  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:21:42.871  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:21:43.048  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:21:44.445  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:21:44.964  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:21:47.168  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:21:47.517  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:21:48.005  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:21:48.755  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:21:48.937  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:21:51.304  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:21:51.340  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:23:23.199  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:23:23.310  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:23:23.523  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:23:23.690  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:23:24.627  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:23:24.880  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:23:26.620  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:23:26.653  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:31:59.849  DataBaseSourceClass:32 - Checking the application.properties !
+[INFO ] 2025-11-24 13:32:00.514  DataBaseSourceClass:42 - application.properties found !
+[INFO ] 2025-11-24 13:32:00.568  DataBaseSourceClass:53 - Creating new db instance
+[INFO ] 2025-11-24 13:32:00.647  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:32:00.959  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:32:01.101  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:32:01.332  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:32:01.501  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:32:03.637  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:32:03.823  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:32:06.282  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:32:06.322  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:32:09.469  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:32:09.490  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:32:09.508  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:32:09.537  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:32:09.567  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:32:09.592  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:32:09.625  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:32:09.646  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:32:09.736  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:32:09.785  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:32:13.070  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:32:13.129  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:32:28.063  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:32:28.089  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:32:28.254  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:32:28.367  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:32:28.602  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:32:36.672  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:33:17.803  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:33:44.161  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 13:34:14.123  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:15:42.869  DataBaseSourceClass:32 - Checking the application.properties !
+[INFO ] 2025-11-24 14:15:43.801  DataBaseSourceClass:42 - application.properties found !
+[INFO ] 2025-11-24 14:15:43.863  DataBaseSourceClass:53 - Creating new db instance
+[INFO ] 2025-11-24 14:15:43.919  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:15:44.237  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:15:44.401  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:15:44.991  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:15:45.149  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:16:47.114  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:16:47.242  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:20:51.682  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:20:51.796  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:24:22.868  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:24:23.044  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:26:00.308  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:26:00.747  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:26:22.573  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:26:22.614  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:26:22.959  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:26:23.102  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:26:23.167  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:28:46.629  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:28:46.752  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:28:48.094  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:28:48.131  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:29:14.655  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:29:14.766  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:29:14.798  UserRepositoryImplementation:46 - employee insertion initiated.
+[INFO ] 2025-11-24 14:29:14.814  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:29:14.830  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:29:14.878  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:29:14.894  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:29:14.942  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:29:15.003  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:29:15.046  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:29:30.628  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:29:30.654  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:29:33.379  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:29:33.402  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:29:38.514  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:29:38.538  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:29:39.723  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:29:39.747  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:29:39.865  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:29:39.959  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:29:40.014  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:30:18.542  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:30:18.566  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:30:18.812  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:30:18.845  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:30:19.918  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:30:19.952  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:30:30.175  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:30:30.198  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:30:30.347  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:30:30.454  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:30:30.486  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:30:34.528  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:30:34.811  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:30:34.854  DataBaseSourceClass:71 - returning the old db instance
+[INFO ] 2025-11-24 14:30:35.049  DataBaseSourceClass:71 - returning the old db instance
