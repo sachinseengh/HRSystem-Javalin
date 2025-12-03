@@ -51,7 +51,7 @@ public class Employee_Management {
             ctx.json(400);
             ctx.json(Map.of(
             
-            "error","Validation error",
+            "error","Validation errors",
                     "details",e.getErrors()
             
             ));
